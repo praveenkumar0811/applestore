@@ -1,0 +1,514 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=MuseoModerno:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+body{
+    font-size: 18px;
+    font-family: "Quicksand", sans-serif;
+    overflow-x: hidden;
+}
+.navbar
+{
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+#nav1
+{
+    height: 100%;
+    width: 40%;
+    margin-top: 15px;
+}
+#nav2{
+    height: 100%;
+    width: 49%;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} 
+#nav2 a{
+    text-decoration: none;
+    color: black;
+}
+#nav2 a:hover{
+    color: aqua;
+}
+.dropbtn {
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  /* nav3 */
+  #nav3{
+    height: 100%;
+    width: 11%;
+    margin-top: 15px;
+    padding-right: 20px;
+}
+#nav3 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#nav3a{
+    display: none;
+}
+@media(max-width:991px)
+{
+    #nav2{
+        display: none;
+    }
+    #nav3 ul{
+        display: none;
+    }
+    #nav3a {
+        display: block;
+        margin-top: 2vh;
+        margin-left: 50vw;
+    }
+}
+.bg1{
+    height: 560px;
+    width: 100%;
+   
+    background-color: #EDF1F3;
+    overflow: hidden;
+}
+.bg1 h2{
+    margin-top: -33vw;
+    font-size: 5vw;
+    font-weight: 400;
+    margin-left: 6vw;
+}
+.bg1 img{
+    height: 600px;
+    width: 42%;
+    margin-top: -3vw;
+    margin-left: 50vw;
+    background-size: contain;
+}
+.bg1 button{
+    color: white;
+    background-color: black;
+    padding: 16px 45px;
+    margin-top: 1px;
+    margin-left: 6vw;
+}
+#bg{
+   z-index: 1;
+    margin-left: 100px;
+    font-size: 50px;
+    margin-left: 18vw;
+    margin-top: -70vh;
+
+}
+@media(max-width:991px){
+    .bg1{
+        height: 70vh;
+        width: 100%;
+    }
+    .bg2{
+        height: 100%;
+        width: 50%;
+    }
+    .bg2 h3{
+        font-size: 3em;
+    }
+    .bg3{
+        height: 100%;
+        width: 50%;
+}
+}
+.obj1{
+    height: 20vh;
+    width: 85%;
+    margin-top: 10vh;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-between;
+}
+#ob1,#ob2,#ob3,#ob4  {
+    display: flex;
+    font-size: .8em;
+}
+.obj1 i{
+    font-size: 3rem;
+    font-weight: 300;
+    color: aquamarine;
+}
+.obj1 h2{
+    margin-top: 1vh;
+}
+#ob1 span{
+    font-weight: 400;
+}
+#ob2 span{
+    font-weight: 400;
+
+}#ob3 span{
+    font-weight: 400;
+
+}#ob4 span{
+    font-weight: 400;
+
+}
+@media(max-width:991px){
+   .obj1{
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+   }
+}
+@media(max-width:768px){
+    
+    .obj1{
+    height: 60vh;
+     grid-template-columns: 1fr ;
+     grid-template-rows: 1fr 1fr 1fr 1fr;
+     justify-content: center;
+    } 
+ }
+.product h1{
+    float: left;
+    margin-left: 80px;
+}
+.product1{
+    height: 24vw;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 25vw;
+    gap: 40px;
+    margin-left: 5vw;
+}
+#p1{
+    background-image: url(https://themewagon.github.io/MiniStore/images/product-item1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#p2{
+    background-image: url(https://themewagon.github.io/MiniStore/images/product-item2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#p3{
+    background-image: url(https://themewagon.github.io/MiniStore/images/product-item3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#p4{
+    background-image: url(https://themewagon.github.io/MiniStore/images/product-item4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h4{
+    margin-top: 25vw;
+}
+span{
+    margin-left: 20px;
+}
+@media(max-width:991px){
+    .product1{
+        height: 54vw;
+        grid-template-columns: 29% 29%;
+        grid-template-rows: 30vw 30vw;
+        justify-content: center;
+
+    }
+    h4{
+        margin-top: 30vw;
+    }
+
+}
+@media(max-width:768px){
+    .product1{
+        height: 140vw;
+        grid-template-columns: 39% ;
+        grid-template-rows: 36vw 36vw 36vw 36vw;
+        justify-content: center;
+
+    }
+    h4{
+        margin-top: 36vw;
+    }
+}
+.product1a{
+    height: 24vw;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 23% 23% 23% 23%;
+    grid-template-rows: 25vw;
+    gap: 40px;
+    margin-left: 5vw;
+}
+#p1a{
+    background-image: url(https://themewagon.github.io/MiniStore/images/product-item1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#p2a{
+    background-image: url(https://themewagon.github.io/MiniStore/images/product-item2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#p3a{
+    background-image: url(https://themewagon.github.io/MiniStore/images/product-item3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#p4a{
+    background-image: url(https://themewagon.github.io/MiniStore/images/product-item4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h4{
+    margin-top: 25vw;
+}
+span{
+    margin-left: 20px;
+}
+@media(max-width:991px){
+    .product1a{
+        height: 54vw;
+        grid-template-columns: 29% 29%;
+        grid-template-rows: 30vw 30vw;
+        justify-content: center;
+
+    }
+    h4{
+        margin-top: 30vw;
+    }
+
+}
+@media(max-width:768px){
+    .product1a{
+        height: 140vw;
+        grid-template-columns: 39% ;
+        grid-template-rows: 36vw 36vw 36vw 36vw;
+        justify-content: center;
+
+    }
+    h4{
+        margin-top: 36vw;
+    }
+}
+.producta h1{
+    float: left;
+    margin-left: 80px;
+}
+.producta h5{
+    margin-left: 90vw;
+    margin-top: 33vh;
+}
+
+.bg1a{
+    height: 630px;
+    width: 100%;
+    margin-top: 200px;
+    background-color: #EDF1F3;
+}
+.bg1a img{
+    height: 90%;
+    width: 50%;
+    margin-top: 4vw;
+    margin-left: 50vw;
+    background-size: contain;
+}
+.bg1a button{
+    color: white;
+    background-color: black;
+    padding: 16px 45px;
+    margin-top: 10px;
+    margin-left: 18vw;
+}
+#bg3a{
+   z-index: 1;
+    margin-left: 100px;
+    font-size: 50px;
+    margin-left: 18vw;
+    margin-top: -70vh;
+
+}
+.productb{
+    height: 300px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 300px;
+    margin-top: 50px;
+    margin-left: 80px;
+    gap: 20px;
+}
+.productb h1{
+    margin-top: 50px;
+
+}
+.productb h5{
+    margin-top: 300px;
+    font-size: 20px;
+}
+.productb span{
+    font-size: 30px;
+}
+
+#p1b{
+    background-image: url(https://themewagon.github.io/MiniStore/images/post-item1.jpg);
+    background-size: cover;
+}
+#p2b{
+    height: 300px;
+    background-image: url(https://themewagon.github.io/MiniStore/images/post-item2.jpg);
+    background-size: cover;
+}
+#p3b{
+    height: 300px;
+    background-image: url(https://themewagon.github.io/MiniStore/images/post-item3.jpg);
+    background-size: cover;
+}
+#h1a{
+    margin-top: 300px;
+    margin-left: 8vw;
+}
+label{
+    margin-left: 600PX;
+    color: aquamarine;
+}
+font{
+    margin-left: 600px;
+}
+#border1{
+    height: 200px;
+    width: 90%;
+    background-color: rgb(50, 47, 47);
+    color: white;
+    display: flex;
+    margin-left: 5vw;
+}
+#border1 h1{
+    margin-top: 3vw;
+    margin-left: 20px;
+}
+#border1 span{
+    font-size: 16px;
+    margin-left: -1px;
+}
+#bord1{
+    height: 100%;
+    width: 50%;
+    text-align: center;
+    margin-top: 6vw;
+}
+#bord1 input{
+    padding: 10px 8vw;
+}
+#bord1 button{
+    padding: 10px 50px;
+    color: white;
+    background-color: rgba(127, 246, 255, 0.781);
+}
+
+
+.product2{
+    height: 300px;
+    width: 90%;
+    margin-top: 30px;
+    margin-left: 80px;
+    display: grid;
+    grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
+    grid-template-rows: 20vw;
+    gap: 10px;
+}
+#h1b{
+    margin-left: 500px;
+}
+#product2a{
+    background-image: url(https://themewagon.github.io/MiniStore/images/insta-item1.jpg);
+    background-size: cover;
+}
+#product2b{
+    background-image: url(https://themewagon.github.io/MiniStore/images/insta-item2.jpg);
+    background-size: cover;
+
+}
+#product2c{
+    background-image: url(https://themewagon.github.io/MiniStore/images/insta-item3.jpg);
+    background-size: cover;
+}
+#product2d{
+    background-image: url(https://themewagon.github.io/MiniStore/images/insta-item4.jpg);
+    background-size: cover;
+}
+#product2e{
+    background-image: url(https://themewagon.github.io/MiniStore/images/insta-item5.jpg);
+    background-size: cover;
+}
+.last{
+    height: 300px;
+    width: 90%;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+}
+#l1{
+    height: 100%;
+    width: 25%;
+}
+#l{
+    height: 100%;
+    width: 25%;
+}
+#l3{
+    height: 100%;
+    width: 15%;
+}
+#l4{
+    height: 100%;
+    width: 25%;
+}
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+footer p {
+    float: left;
+    margin-left: 150px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
